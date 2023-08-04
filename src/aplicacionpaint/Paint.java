@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * "AplicacionPaint" es una aplicación gráfica desarrollada en Java que permite 
+ * a los usuarios dibujar diversas figuras geométricas. La aplicación se 
+ * asemeja a un programa de dibujo simple.
  */
 package aplicacionpaint;
 
@@ -356,13 +356,6 @@ public class Paint extends JFrame implements ActionListener, MouseListener {
         panel1.setLayout(new FlowLayout());
         panel1.setBackground(new Color(245, 246, 248));
         
-        // Configurar botones de colores
-        /*
-        Cnegro = new JButton();
-        Cnegro.setBackground(new Color(1, 1, 1));
-        Cnegro.setPreferredSize(new Dimension(20, 20));
-        panel1.add(Cnegro);
-        */
         
         // Configurar botones de colores
         Cnegro = new JButton();
@@ -374,12 +367,7 @@ public class Paint extends JFrame implements ActionListener, MouseListener {
         Cnegro.setBorder(null);
         panel1.add(Cnegro);
         
-        
-        
-        
         Cgriz = new JButton();
-        //Cgriz.setBackground(new Color(127, 127, 127));
-        //Cgriz.setPreferredSize(new Dimension(20, 20));
         rutita = Paint.class.getResource("/colores/gris-100.png");
         ima = new ImageIcon(rutita).getImage();//redimencion
         image = new ImageIcon(ima.getScaledInstance(25, 25, Image.SCALE_SMOOTH));
@@ -842,7 +830,6 @@ public class Paint extends JFrame implements ActionListener, MouseListener {
         if (e.getSource() == btgruesoss) {
             miPanel.grosor = 14;
         }
-
         if (e.getSource() == Cnegro) {
             this.miPanel.setColorActual(new Color(1, 1, 1));
         }
@@ -886,7 +873,6 @@ public class Paint extends JFrame implements ActionListener, MouseListener {
                 this.miPanel.setColorActual(colorSeleccionado);
             }
         }
-        
         if (e.getSource() == btnNuevo) {
             miPanel.resetAll();
         }
@@ -899,7 +885,6 @@ public class Paint extends JFrame implements ActionListener, MouseListener {
         if (e.getSource() == btnSalir) {
             System.exit(0);
         }
-        
         if (e.getSource() == btnGoma) {
             miPanel.goma = true;
             miPanel.linea = false;
@@ -928,7 +913,6 @@ public class Paint extends JFrame implements ActionListener, MouseListener {
             miPanel.curva = false;
             miPanel.Texto = false;
         }
-
         if (e.getSource() == botonLapiz) {
             miPanel.lapiz = true;
             miPanel.linea = false;
@@ -1165,12 +1149,6 @@ public class Paint extends JFrame implements ActionListener, MouseListener {
     }
 
 }
-
-/****
- * 
- * 
- * @author damian
- */
 
 
 
