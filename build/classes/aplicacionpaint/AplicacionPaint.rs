@@ -1,0 +1,5 @@
+aplicacionpaint.MiPanel$OyenteDeRaton
+aplicacionpaint.MiPanel$OyenteDeMovimiento
+aplicacionpaint.MiPanel
+aplicacionpaint.MiPanel$MyFileFilter
+aplicacionpaint.Paint
